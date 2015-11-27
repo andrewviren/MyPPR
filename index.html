@@ -16,8 +16,10 @@
 <script>
   window.KnackInit = function($) {
   var attributes = Knack.getUserAttributes();
-  var window.uname = attributes['name'];
-  var window.uemail = attributes['email'];
+  var uname = attributes['name'];
+  var uemail = attributes['email'];
+  window.uname=uname
+  window.uemail=uemail
   };
 </script>
       <header>
@@ -30,17 +32,17 @@
 </section>
 <script src="https://cdn.smooch.io/smooch.min.js"></script>
 <script>
-alert(window.uname, window.uemail);
+alert(uname, uemail);
 Smooch.init(
   {appToken: '6jhd64mwwj4k58b4bnauonrt6',
-  givenName: window.uname,
-  email: window.uemail
+  givenName: uname,
+  email: uemail
   });
 
 Smooch.updateUser({
-    givenName: window.uname,
-    surname: window.uname,
-    email: window.uemail
+    givenName: uname,
+    surname: uname,
+    email: uemail
 });
 </script>
 </body>
