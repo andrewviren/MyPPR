@@ -14,13 +14,13 @@
   </head>
 <body>
 <script>
+  var uname;
+  var uemail;
   window.KnackInit = function($) {
   var attributes = Knack.getUserAttributes();
-  var uname = attributes['name'];
-  var uemail = attributes['email'];
+  uname = attributes['name'];
+  uemail = attributes['email'];
   };
-  window.uname=uname;
-  window.uemail=uemail;
 </script>
       <header>
         <h1>PPRstat</h1>
@@ -32,7 +32,7 @@
 </section>
 <script src="https://cdn.smooch.io/smooch.min.js"></script>
 <script>
-alert(window.uname, window.uemail);
+alert(uname, uemail);
 Smooch.init(
   {appToken: '6jhd64mwwj4k58b4bnauonrt6',
   givenName: uname,
