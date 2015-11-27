@@ -20,7 +20,14 @@
   var attributes = Knack.getUserAttributes();
   uname = attributes['name'];
   uemail = attributes['email'];
+  alert(uname, uemail);
   };
+Smooch.init(
+  {appToken: '6jhd64mwwj4k58b4bnauonrt6',
+  givenName: uname,
+  email: uemail
+  });
+
 </script>
       <header>
         <h1>PPRstat</h1>
@@ -31,13 +38,5 @@
 <div id="knack-dist_2">Loading...</div>
 </section>
 <script src="https://cdn.smooch.io/smooch.min.js"></script>
-<script>
-alert(window.uname, window.uemail);
-Smooch.init(
-  {appToken: '6jhd64mwwj4k58b4bnauonrt6',
-  givenName: uname,
-  email: uemail
-  });
-</script>
 </body>
 </html>
