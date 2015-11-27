@@ -15,19 +15,21 @@
 <script src="https://cdn.smooch.io/smooch.min.js"></script>
 <script type="text/javascript">app_id="564d31e3396869690b030a9b";distribution_key="dist_2";</script><script type="text/javascript" src="https://api.knackhq.com/564d31e3396869690b030a9b/dist_2/knack.js"></script>
 <script>
-var uname;
+var ugivenname;
+var usurname;
 var uemail;
 
 window.KnackInit = function($) {
   var attributes = Knack.getUserAttributes();
-  uname = attributes['name'];
+  ugivenname = attributes['name'].split(" ,")[0];
+  usurname = attributes['name'].split(" ,")[1];
   uemail = attributes['email'];
-  alert(uname);
+  alert(ugivenname);
   
   Smooch.init(
   {appToken: '6jhd64mwwj4k58b4bnauonrt6',
-  givenName: "poop muffin",
-  email: "andy.viren@phila.gov"
+  givenName: uname,
+  email: uemail
   });
   
   };
