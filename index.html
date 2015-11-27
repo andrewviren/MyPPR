@@ -22,11 +22,12 @@ var uemail;
 window.KnackInit = function($) {
   var attributes = Knack.getUserAttributes();
   ugivenname = attributes['name'];
+  alert(ugivenname.split(" ,"));
   ugivenname = ugivenname.split(" ,")[0];
   usurname = attributes['name'];
   usurname = usurname.split(" ,")[1]
   uemail = attributes['email'];
-  alert(usurname);
+  
   
   Smooch.init(
   {appToken: '6jhd64mwwj4k58b4bnauonrt6',
