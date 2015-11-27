@@ -18,11 +18,13 @@
 var ugivenname;
 var usurname;
 var uemail;
+var namesplit;
 
 window.KnackInit = function($) {
   var attributes = Knack.getUserAttributes();
   ugivenname = attributes['name'];
-  alert(ugivenname.split(" ,"));
+  namesplit = ugivenname.split(" ,")
+  alert(namesplit[0]);
   ugivenname = ugivenname.split(" ,")[0];
   usurname = attributes['name'];
   usurname = usurname.split(" ,")[1]
