@@ -23,7 +23,7 @@ var namesplit;
 window.KnackInit = function($) {
   var attributes = Knack.getUserAttributes();
   ugivenname = attributes['name'];
-  namesplit = ugivenname.split(" ,")
+  namesplit = ugivenname.split(" ")
   alert(namesplit[0]);
   ugivenname = ugivenname.split(" ,")[0];
   usurname = attributes['name'];
