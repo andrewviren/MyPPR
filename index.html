@@ -15,7 +15,7 @@
 <body>
 <script>
   window.KnackInit = function($) {
-  alert(Knack.getUserAttributes()['email']);
+  alert(Knack.getUserAttributes(['email']));
   Knack.getUserToken();
   };
 </script>
