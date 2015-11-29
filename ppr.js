@@ -28,9 +28,10 @@ u_email = attributes['email'];*/
   
 Smooch.init({
       appToken: '6jhd64mwwj4k58b4bnauonrt6',
-      givenName: ugivenname,
-      surname: usurname,
-      email: uemail
+      givenName: "test"//ugivenname,
+      surname: "test"//usurname,
+      email: "test" //uemail
+      email: "test" //uemail
       });
     
   $(document).on('knack-page-render.scene_1', function(event, page) {
