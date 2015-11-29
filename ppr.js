@@ -29,28 +29,6 @@ window.KnackInit = function($) {
     ];
     var $attendanceWeekField = $('#view_1-field_41');
     var today, monday, daysSinceMonday;
-
-    /**********************************
-    / Pull in username for smooch ID
-    /***********************************/
-      
-var u_givenname;
-var u_surname;
-var u_email; 
-    
-*var attributes = Knack.getUserAttributes();
-u_givenname = attributes['name'].split(" ")[0];
-u_surname = attributes['name'].split(" ")[1];
-u_email = attributes['email'];
-      
-      
-Smooch.init({
-      appToken: '6jhd64mwwj4k58b4bnauonrt6',
-      givenName: "test"//ugivenname,
-      surname: "test"//usurname,
-      email: "test" //uemail
-      email: "test" //uemail
-      });
      
       
     /**********************************
