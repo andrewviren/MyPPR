@@ -2,48 +2,154 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>PPRstat by andrewviren</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <title>Parks &amp; Rec Forms | phila.gov</title>
+    <link rel='icon' type='image/x-icon' href="//cityofphiladelphia.github.io/patterns/images/favicon.ico">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--Ionicons are optional-->
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!--pattern stylesheet includes foundation css -->
+    <link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/0.11.1/css/patterns.css">
+
+    <link rel="canonical" href="">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <style>
+    #page #kn-app-menu ul {
+      background-color: #027EA4; /* $ben-franklin-blue */
+      border: none;
+    }
+    .kn-records-nav select,
+    .kn-records-nav input {
+      width: initial;
+      display: initial;
+    }
+    </style>
   </head>
-<body>
-<script src="https://cdn.smooch.io/smooch.min.js"></script>
-<script type="text/javascript">app_id="564d31e3396869690b030a9b";distribution_key="dist_2";</script><script type="text/javascript" src="https://api.knackhq.com/564d31e3396869690b030a9b/dist_2/knack.js"></script>
-<script>
-var ugivenname;
-var usurname;
-var uemail;
 
-window.KnackInit = function($) {
-  var attributes = Knack.getUserAttributes();
-  ugivenname = attributes['name'].split(" ")[0];
-  usurname = attributes['name'].split(" ")[1];
-  uemail = attributes['email'];
-  
-  
-  Smooch.init(
-  {appToken: '6jhd64mwwj4k58b4bnauonrt6',
-  givenName: ugivenname,
-  surname: usurname,
-  email: uemail
-  });
-  
-  };
+  <body>
+    <!-- Google Tag Manager [phila.gov] -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MC6CR2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MC6CR2');</script>
+    <!-- End Google Tag Manager -->
 
+    <div class="site" id="page">
 
+<!-- Begin .header -->
+<header data-swiftype-index='false' class="site-header" role="banner">
+  <div class="row">
+    <div class="small-24 medium-12 columns">
+      <a href="http://alpha.phila.gov"><img src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-logo.png" class="logo no-scale" alt="City of Philadelphia"></a>
+    </div>
+    <div class="small-24 medium-12 columns">
+<form class="search">
+  <input type="text" placeholder="Search alpha.phila.gov"><input type="submit">
+</form>
 
+    </div>
+  </div>
+</header>
 
-</script>
+<div class="row">
+  <div class="small-24 columns">
+    <div class="divider"></div>
+  </div>
+</div>
+<!-- <div class="row">
+  <div id="breadcrumbs" class="large-24 columns">
+    <ul class="inline-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Grandparent</a></li>
+      <li><a href="#">Parent</a></li>
+      <li>Child</li>
+    </ul>
+  </div>
+</div>
+ -->
+      <article data-swiftype-name="body" data-swiftype-type="text">
+        <div class="row">
+          <div class="large-24 columns">
+            <!-- Knack embed code -->
+            <script type="text/javascript">app_id="55df11eea0d1f0002bf26c1f";distribution_key="dist_2";</script>
+            <script type="text/javascript" src="https://api.knackhq.com/55df11eea0d1f0002bf26c1f/dist_2/knack.js"></script>
+            <div id="knack-dist_2">Loading...</div>
 
-        <h1>PPRstat</h1>
+            <!-- Custom JavaScript -->
+            <script src="ppr.js"></script>
+          </div>
+        </div>
+      </article>
+    </div><!-- End #page -->
+<!-- Begin Footer -->
+<footer data-swiftype-index='false' class="site-footer" role="contentinfo">
+  <section class="fat">
+    <div class="row">
+      <div class="large-8 columns">
+        <h1>Government</h1>
+        <nav>
+          <ul>
+            <li><a href="http://alpha.phila.gov">alpha.phila.gov</a></li>
+            <li><a href="http://alpha.phila.gov/departments">Department Directory</a></li>
+            <li><a href="http://www.phila.gov/mayor">Mayor's Office</a></li>
+            <li><a href="http://iframe.publicstuff.com/#?client_id=242">Report an Issue / 311</a></li>
+            <li><a href="http://cityofphiladelphia.wordpress.com/">News</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="large-16 columns">
+        <h1>Browse alpha.phila.gov</h1>
+        <nav>
+          <ul class="columns-2">
+            <li><a href="http://alpha.phila.gov/browse/business">Business</a></li>
+            <li><a href="http://alpha.phila.gov/browse/health">Health</a></li>
+            <li><a href="http://alpha.phila.gov/browse/jobs-and-contracts">Jobs and Contracts</a></li>
+            <li><a href="http://alpha.phila.gov/browse/legal">Legal</a></li>
+            <li><a href="http://alpha.phila.gov/browse/payments-and-taxes">Payments and Taxes</a></li>
+            <li><a href="http://alpha.phila.gov/browse/permits-licenses">Permits and Licenses</a></li>
+            <li><a href="http://alpha.phila.gov/browse/property-housing">Property and Housing</a></li>
+            <li><a href="http://alpha.phila.gov/browse/public-safety">Public Safety</a></li>
+            <li><a href="http://alpha.phila.gov/browse/recreation">Recreation</a></li>
+            <li><a href="http://alpha.phila.gov/browse/streets-and-utilities">Streets and Utilities</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <div class="row classic">
+    <div class="large-6 columns">
+      <a href="#">Feedback</a>
+    </div>
+    <div class="large-12 columns">
+      <nav>
+        <ul class="inline-list">
+          <li><a href="http://alpha.phila.gov/terms-of-use">Terms of use</a></li>
+          <li><a href="http://www.phila.gov/privacy/pdfs/FinalCityOpenRecords.pdf">Right to know (pdf)</a></li>
+          <li><a href="http://alpha.phila.gov/privacypolicy">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
 
-<div id="knack-dist_2"></div>Loading...</div>
+<!-- End Footer -->
 
-</body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
+    <script src="//cityofphiladelphia.github.io/patterns/dist/0.11.1/js/patterns.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="https://cdn.smooch.io/smooch.min.js"></script>
+  </body>
 </html>
