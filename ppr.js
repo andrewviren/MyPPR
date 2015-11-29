@@ -17,6 +17,22 @@ window.KnackInit = function($) {
   - field_41: Attendance Week
   */
 
+var u_givenname;
+var u_surname;
+var u_email; 
+    
+var attributes = Knack.getUserAttributes();
+u_givenname = attributes['name'].split(" ")[0];
+u_surname = attributes['name'].split(" ")[1];
+u_email = attributes['email'];
+  
+Smooch.init({
+      appToken: '6jhd64mwwj4k58b4bnauonrt6',
+      givenName: ugivenname,
+      surname: usurname,
+      email: uemail
+      });
+    
   $(document).on('knack-page-render.scene_1', function(event, page) {
     PPR.attendanceForm = PPR.attendanceForm || {};
 
@@ -67,19 +83,4 @@ window.KnackInit = function($) {
       $(el).attr('pattern', '[0-9]*');
     });
   });
-var u_givenname;
-var u_surname;
-var u_email; 
-    
-var attributes = Knack.getUserAttributes();
-u_givenname = attributes['name'].split(" ")[0];
-u_surname = attributes['name'].split(" ")[1];
-u_email = attributes['email'];
-  
-Smooch.init({
-      appToken: '6jhd64mwwj4k58b4bnauonrt6',
-      givenName: ugivenname,
-      surname: usurname,
-      email: uemail
-      });
 };
