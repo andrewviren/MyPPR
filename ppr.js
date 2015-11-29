@@ -21,10 +21,10 @@ var u_givenname;
 var u_surname;
 var u_email; 
     
-var attributes = Knack.getUserAttributes();
+/*var attributes = Knack.getUserAttributes();
 u_givenname = attributes['name'].split(" ")[0];
 u_surname = attributes['name'].split(" ")[1];
-u_email = attributes['email'];
+u_email = attributes['email'];*/
   
 Smooch.init({
       appToken: '6jhd64mwwj4k58b4bnauonrt6',
