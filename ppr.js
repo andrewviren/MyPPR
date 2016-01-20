@@ -8,7 +8,7 @@ window.KnackInit = function($) {
   ========================================================
   Views
   -----
-  - view_149: Weekly Program Attendance form
+  - view_154: Weekly Program Attendance form
   Fields
   ------
   - field_151: Number of Registered Participants
