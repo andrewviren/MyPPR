@@ -21,9 +21,9 @@ window.KnackInit = function($) {
     PPR.attendanceForm = PPR.attendanceForm || {};
 
     var numericFields = [
-      '#field_38',
-      '#field_39',
-      '#field_40'
+      '#field_151',
+      '#field_150',
+      '#field_152'
     ];
     var $attendanceWeekField = $('#view_154-field_148');
     var today, monday, daysSinceMonday;
