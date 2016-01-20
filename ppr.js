@@ -33,7 +33,7 @@ window.KnackInit = function($) {
     /* Only allow Mondays to be selected
     /***********************************/
     $attendanceWeekField.datepicker('option', {
-      beforeShowDay: function (dat
+      beforeShowDay: function (date) {
         //console.debug(date);
         return [date.getDay() == 1, ''];
       }
