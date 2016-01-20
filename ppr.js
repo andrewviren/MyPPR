@@ -4,17 +4,17 @@ window.KnackInit = function($) {
   'use strict';
 
   /*
-  Page "scene_1": Weekly Program Attendance form and table
+  Page "scene_93": Program Program Attendance form and table
   ========================================================
   Views
   -----
-  - view_1: Weekly Program Attendance form
+  - view_149: Weekly Program Attendance form
   Fields
   ------
-  - field_38: Number of Registered Participants
-  - field_39: Number of Unique Participants
-  - field_40: Number of Spectators
-  - field_41: Attendance Week
+  - field_151: Number of Registered Participants
+  - field_150: Number of Unique Participants
+  - field_152: Number of Spectators
+  - field_148: Attendance Week
   */
 
   $(document).on('knack-page-render.scene_1', function(event, page) {
@@ -25,7 +25,7 @@ window.KnackInit = function($) {
       '#field_39',
       '#field_40'
     ];
-    var $attendanceWeekField = $('#view_1-field_41');
+    var $attendanceWeekField = $('#view_149-field_148');
     var today, monday, daysSinceMonday;
      
       
