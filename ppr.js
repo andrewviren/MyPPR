@@ -25,7 +25,7 @@ window.KnackInit = function($) {
       '#field_39',
       '#field_40'
     ];
-    var $attendanceWeekField = $('#view_149-field_148');
+    var $attendanceWeekField = $('#view_154-field_148');
     var today, monday, daysSinceMonday;
      
       
