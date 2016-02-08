@@ -1,3 +1,4 @@
 prose:
+  rooturl:'javascripts'
   ignore:
     - 'params.json'
