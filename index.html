@@ -94,26 +94,7 @@
           <div class="large-24 columns">
             <!-- Knack embed code -->
             <script type="text/javascript">app_id="56733078e8eaf49605439f7d";distribution_key="dist_2";</script><script type="text/javascript" src="https://api.knackhq.com/56733078e8eaf49605439f7d/dist_2/knack.js"></script><div id="knack-dist_2">Loading...</div>
-<script>    
-    /**********************************
-    / Pull in username for smooch ID
-    /***********************************/
-      
-var u_givenname;
-var u_surname;
-var u_email; 
-    
-/*var attributes = Knack.getUserAttributes();
-u_givenname = attributes['name'].split(" ")[0];
-u_surname = attributes['name'].split(" ")[1];
-u_email = attributes['email'];*/
-Smooch.init({
-      appToken: '6jhd64mwwj4k58b4bnauonrt6',
-      givenName: "test",//ugivenname,
-      surname: "test",//usurname,
-      email: "test"//uemail
-      });
-</script>
+
             <!-- Custom JavaScript -->
             <script src="ppr.js"></script>
           </div>
@@ -180,5 +161,25 @@ Smooch.init({
       $(document).foundation();
     </script>
     <script src="https://cdn.smooch.io/smooch.min.js"></script>
+    <script>    
+    /**********************************
+    / Pull in username for smooch ID
+    /***********************************/
+      
+var u_givenname;
+var u_surname;
+var u_email; 
+    
+/*var attributes = Knack.getUserAttributes();
+u_givenname = attributes['name'].split(" ")[0];
+u_surname = attributes['name'].split(" ")[1];
+u_email = attributes['email'];*/
+Smooch.init({
+      appToken: '6jhd64mwwj4k58b4bnauonrt6',
+      givenName: "test",//ugivenname,
+      surname: "test",//usurname,
+      email: "test"//uemail
+      });
+</script>
   </body>
 </html>
