@@ -1,25 +1,21 @@
-<!DOCTYPE html public "-//w3c//dtd html 4.01//en" "http://www.w3.org/tr/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> MyPPR </title>
-    <link rel='icon' type='image/x-icon' href="https://cityofphiladelphia.github.io/patterns/images/favicon.ico">
+    <title>Boilerplate | phila.gov</title>
+    <link rel='icon' type='image/x-icon' href="//cityofphiladelphia.github.io/patterns/images/favicon.ico">
     <meta name="description" content="">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <!--Ionicons are optional-->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
     <!--pattern stylesheet includes foundation css -->
-    <link rel="stylesheet" href="https://cityofphiladelphia.github.io/patterns/dist/1.1.2/css/patterns.css">
-
-    <link rel="canonical" href="">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
+    <link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/1.4.1/css/patterns.css">
     <style>
     #page #kn-app-menu ul {
       background-color: #027EA4; /* $ben-franklin-blue */
@@ -31,79 +27,66 @@
       display: initial;
     }
     </style>
-<!-- Hotjar Tracking Code for http://test.my-ppr.com/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:184415,hjsv:5};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
 
+    <link rel="canonical" href="">
 
+    <!-- Hotjar Tracking Code for http://test.my-ppr.com/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:184415,hjsv:5};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 
   </head>
 
   <body>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-82273180-1', 'auto');
-  ga('send', 'pageview');
-
-  </script>
-
-<div class="site" id="page">
-
-<!-- Begin .header -->
-<header data-swiftype-index='false' class="site-header app" role="banner">
-      <div class="row">
-        <div class="large-16 columns">
-          <div class="row collapse">
-            <div class="small-6 columns">
-            <!--<a href="http://alpha.phila.gov">-->
-                <img src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-logo-mobile.png" alt="City of Philadelphia" class="logo show-for-small-only">
-
-                <img src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-logo.png" alt="City of Philadelphia" class="logo show-for-medium-up">
+    ga('create', 'UA-82273180-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <div class="site" id="page">
+      <!-- Begin .header -->
+      <header data-swiftype-index='false' class="site-header app">
+        <div class="row site-branding">
+          <div class="small-24 columns">
+            <a href="http://www.phila.gov" class="logo pam">
+              <img src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-white.png" alt="City of Philadelphia">
+            </a>
+            <div class="page-title-container">
+              <a href="#/">
+                <h1 class="page-title">My PPR</h1>
+                <h2 class="page-subtitle">An optional subtitle</h2>
               </a>
-              <h1 class="site-title">phila.gov</h1>
-              <h2 class="site-description">City of Philadelphia</h2>
             </div>
-            <div class="small-18 columns">
-              <div class="page-title-container">
-                <a href="/">
-                  <h1 class="page-title">My PPR </h1>
-                  <h2 class="page-subtitle">Manage Your Facility's Program Schedules</h2>-
-                </a>
+          </div>
+        </div>
+        <div class="row expanded">
+          <div class="columns">
+            <div class="row">
+              <div class="large-24 columns">
+                <nav>
+                  <ul class="breadcrumbs">
+                    <li><a href="http://www.phila.gov">phila.gov</a></li>
+                    <li><a href="http://www.phila.gov/parksandrecreation/">Parks & Recreation</a></li>
+                    <li>My PPR</li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-<div class="row">
-  <div class="small-24 columns">
-    <div class="divider"></div>
-  </div>
-</div>
-<!-- <div class="row">
-  <div id="breadcrumbs" class="large-24 columns">
-    <ul class="inline-list">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Grandparent</a></li>
-      <li><a href="#">Parent</a></li>
-      <li>Child</li>
-    </ul>
-  </div>
-</div>
- -->
       <article data-swiftype-name="body" data-swiftype-type="text">
         <div class="row">
           <div class="large-24 columns">
@@ -115,18 +98,17 @@
           </div>
         </div>
       </article>
-    </div>
-<!-- End #page -->
-<!-- Begin Footer -->
-<footer data-swiftype-index='false' class="site-footer" role="contentinfo">
+    </div><!-- End #page -->
+    <!-- Begin Footer -->
+<footer data-swiftype-index='false' class="site-footer">
   <section class="fat">
     <div class="row">
       <div class="large-8 columns">
-<!--  <h1>Government</h1>
+        <h1>Government</h1>
         <nav>
           <ul>
             <li><a href="http://alpha.phila.gov">alpha.phila.gov</a></li>
-            <li><a href="http://alpha.phila.gov/departments">Department Directory</a></li>
+            <li><a href="http://alpha.phila.gov/departments">City Government Directory</a></li>
             <li><a href="http://www.phila.gov/mayor">Mayor's Office</a></li>
             <li><a href="http://iframe.publicstuff.com/#?client_id=242">Report an Issue / 311</a></li>
             <li><a href="http://cityofphiladelphia.wordpress.com/">News</a></li>
@@ -137,26 +119,20 @@
         <h1>Browse alpha.phila.gov</h1>
         <nav>
           <ul class="columns-2">
-           <li><a href="http://alpha.phila.gov/browse/business">Business</a></li>
             <li><a href="http://alpha.phila.gov/browse/health">Health</a></li>
-            <li><a href="http://alpha.phila.gov/browse/jobs-and-contracts">Jobs and Contracts</a></li>
             <li><a href="http://alpha.phila.gov/browse/legal">Legal</a></li>
             <li><a href="http://alpha.phila.gov/browse/payments-and-taxes">Payments and Taxes</a></li>
             <li><a href="http://alpha.phila.gov/browse/permits-licenses">Permits and Licenses</a></li>
             <li><a href="http://alpha.phila.gov/browse/property-housing">Property and Housing</a></li>
             <li><a href="http://alpha.phila.gov/browse/public-safety">Public Safety</a></li>
-            <li><a href="http://alpha.phila.gov/browse/recreation">Recreation</a></li>
-            <li><a href="http://alpha.phila.gov/browse/streets-and-utilities">Streets and Utilities</a></li> -->
+            <li><a href="http://alpha.phila.gov/browse/streets-and-utilities">Streets and Utilities</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </section>
-  <div class="row classic">
-    <div class="large-6 columns">
-      <a href="#">Feedback</a>
-    </div>
-    <div class="large-12 columns">
+  <div class="row classic center">
+    <div class="columns">
       <nav>
         <ul class="inline-list">
           <li><a href="http://alpha.phila.gov/terms-of-use">Terms of use</a></li>
@@ -170,32 +146,10 @@
 
 <!-- End Footer -->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
-    <script src="//cityofphiladelphia.github.io/patterns/dist/0.11.1/js/patterns.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-<!--    <script src="https://cdn.smooch.io/smooch.min.js"></script>
-    <script>    
-    /**********************************
-    / Pull in username for smooch ID
-    /***********************************/
-      
-var u_givenname;
-var u_surname;
-var u_email; 
-    
-/*var attributes = Knack.getUserAttributes();
-u_givenname = attributes['name'].split(" ")[0];
-u_surname = attributes['name'].split(" ")[1];
-u_email = attributes['email'];*/
-Smooch.init({
-      appToken: '6jhd64mwwj4k58b4bnauonrt6',
-      givenName: "test",//ugivenname,
-      surname: "test",//usurname,
-      email: "test"//uemail
-      });
-</script>-->
-</body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
+
+    <script src="//cityofphiladelphia.github.io/patterns/dist/1.4.1/js/patterns.min.js"></script>
+  </body>
 </html>
