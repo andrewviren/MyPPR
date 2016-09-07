@@ -17,7 +17,7 @@ window.KnackInit = function($) {
   - field_148: Attendance Week
   */
 
-  $(document).on('knack-page-render.scene_93', function(event, page) {
+  $(document).on('knack-page-render.scene_234', function(event, page) {
     PPR.attendanceForm = PPR.attendanceForm || {};
 
     var numericFields = [
@@ -25,7 +25,7 @@ window.KnackInit = function($) {
       '#field_150',
       '#field_152'
     ];
-    var $attendanceWeekField = $('#view_154-field_148');
+    var $attendanceWeekField = $('#view_426-field_148');
     var today, monday, daysSinceMonday;
      
       
