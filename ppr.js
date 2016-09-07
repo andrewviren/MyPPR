@@ -54,7 +54,7 @@ window.KnackInit = function($) {
       daysSinceMonday = today.getDay() - 1;  // 0 is Sunday, 1 is Monday
       daysSinceMonday = (daysSinceMonday + 7) % 7;  // Correct for negatives
       daysSinceMonday = daysSinceMonday || 7;  // Correct to last Monday if today is Monday
-      monday.setDate(today.getDate() - daysSinceMonday);
+      monday.setDate(today.getDate() - daysSinceMonday - 7);
       $attendanceWeekField.val((monday.getMonth() + 1) + '/' + monday.getDate() + '/' + monday.getFullYear());
     }
 
