@@ -1,4 +1,3 @@
-@media screen and (max-width: 500px)
-.kn-button-menu.kn-grid-3 li {
+a.kn-button-menu.kn-grid-3 li {
     width: 40%;
 }
