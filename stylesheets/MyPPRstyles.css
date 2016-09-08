@@ -2,3 +2,7 @@
 .kn-button-menu.kn-grid-3 li {
     width: 41%;
 }
+
+.kn-view p, .kn-view a, .kn-view span {
+    font-size: 90%;
+}
