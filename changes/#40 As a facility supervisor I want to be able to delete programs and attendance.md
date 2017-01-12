@@ -2,7 +2,7 @@
 
 #### Add "AttendanceCount" field type Count to Program table 
 
-![AttendanceCountField](/images/AttendanceCountField.png)
+![AttendanceCountField](images/AttendanceCountField.png)
 
 #### Add  "ScheduleCount" field type "Count" to Program table
 
