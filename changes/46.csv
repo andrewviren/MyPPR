@@ -1,0 +1,55 @@
+View,View parent,URL,FieldTitle,FieldDescription
+Staff,Staff Login,#staff/,My Profile,This basic employee profile is designed for this website only. No personal information will be shared outside of the department.
+Staff,Staff Login,#staff/,Edit Account,"Edit Name, Suffix, Nickname, User Address, and Secondary Email."
+Staff,Staff Login,#staff/,Change Password,Change your password at anytime. It is recommended you change your password every three months!
+Facility,Staff,#staff/facility,My Facilities,"Follow is a list of facilities you are associated with. View a facility's details to add or edit programs, amenities, or attendance."
+Add Program,ThisFacility,#this-facility/add-program,Facility,Choose your facility.
+Add Program,ThisFacility,#this-facility/add-program,ActivityType,Select the activity type. Choose the closest type if yours is not available (Email additions to andyviren@phila.gov).
+Add Program,ThisFacility,#this-facility/add-program,ProgramName,Write a descriptive name for your program.
+Add Program,ThisFacility,#this-facility/add-program,FacilitatorType,Choose 1-3 of the facilitator types for your program.
+Add Program,ThisFacility,#this-facility/add-program,Program Description,Provide a description of your program. You may use rich text formatting to style your content.
+Add Program,ThisFacility,#this-facility/add-program,Targeted Age Groups,Which age groups is your program designed to engage?
+Add Program,ThisFacility,#this-facility/add-program,Age Start,"How young do people have to be to join this program? If no starting age, Choose ""1""."
+Add Program,ThisFacility,#this-facility/add-program,Age Limit,"What is the oldest age allowed for people in this program? If no limit, Choose ""99""."
+Add Program,ThisFacility,#this-facility/add-program,Fee,Please provide the fee and how often you require payment.
+Add Program,ThisFacility,#this-facility/add-program,Fee B,"What is the fee amount in dollars for this program? (If no fee, enter 0.00 and select Total/Season for Fee Frequency.)"
+Add Program,ThisFacility,#this-facility/add-program,Fee frequency,How often is the fee applied?
+Add Program,ThisFacility,#this-facility/add-program,Amenities,Which of your facilities amenities will be used by this program? 
+Add Program,ThisFacility,#this-facility/add-program,RegistrationStatus,What is the current status of your program?
+Add Program,ThisFacility,#this-facility/add-program,RegistrationStartDate,When do you start registering participants? Enter today's date if you have already started.
+Add Program,ThisFacility,#this-facility/add-program,Publish to the website?,Submit program to be reviewed to publish online. Users will be able to search and express interest in this program.
+Edit Amenity,ThisFacility,#this-facility/edit-amenity,FacilityAmenityPhoto,Upload an image of your amenity.
+Edit Amenity,ThisFacility,#this-facility/edit-amenity,AmenityType,"Choose one of the options for the type of amenity. (If you can't find a type that resembles your amenity, choose the best option.)"
+Edit Amenity,ThisFacility,#this-facility/edit-amenity,AmenityName,Select a name for your amenity. 
+Edit Amenity,ThisFacility,#this-facility/edit-amenity,AmenityUse,What is this amenity typically used for?
+Edit Amenity,ThisFacility,#this-facility/edit-amenity,AmenityDescription,Please include a detailed description of your amenity. Include descriptions such as equipment or features if available.
+Edit Amenity,ThisFacility,#this-facility/edit-amenity,Dimensions,Enter the dimensions of this amenity.
+Edit Amenity,ThisFacility,#this-facility/edit-amenity,MaxCapacity,What is the max number of people that can use this amenity.
+Add Prorgram Attendance,ThisFacility,#view-program-details/add-program-schedule4/,Add Prorgram Attendance,"Add program attendance for your ACTIVE programs only. If a program is inactive, you may change it on the edit program screen. If Unique Individual Count is zero, no attendance is required to be entered."
+Add Prorgram Attendance,ThisFacility,#view-program-details/add-program-schedule4/,Program,Choose from the selected facility's list of ACTIVE programs.
+Add Prorgram Attendance,ThisFacility,#view-program-details/add-program-schedule4/,Attendance Week,Please select the Monday of the week for which you are submmiting attendance.
+Add Prorgram Attendance,ThisFacility,#view-program-details/add-program-schedule4/,Registered Individuals Count,How many people were registered for this program for this week?
+Add Prorgram Attendance,ThisFacility,#view-program-details/add-program-schedule4/,Unique Individual Count,How many unique individuals showed up this week? (This should not be larger than the number registered.)
+Add Prorgram Attendance,ThisFacility,#view-program-details/add-program-schedule4/,Spectator Count,How many spectators attended this week? This should not include staff or volunteers.
+Edit Program,ThisFacility,#this-facility/edit-program3/,Facility,Choose your facility.
+Edit Program,ThisFacility,#this-facility/edit-program3/,ActivityType,Select the activity type. Choose the closest type if yours is not available (Email additions to andyviren@phila.gov).
+Edit Program,ThisFacility,#this-facility/edit-program3/,ProgramName,Write a descriptive name for your program.
+Edit Program,ThisFacility,#this-facility/edit-program3/,FacilitatorType,Choose 1-3 of the facilitator types for your program.
+Edit Program,ThisFacility,#this-facility/edit-program3/,Program Description,Provide a description of your program. You may use rich text formatting to style your content.
+Edit Program,ThisFacility,#this-facility/edit-program3/,Targeted Age Groups,Which age groups is your program designed to engage?
+Edit Program,ThisFacility,#this-facility/edit-program3/,Age Start,"How young do people have to be to join this program? If no starting age, Choose ""1""."
+Edit Program,ThisFacility,#this-facility/edit-program3/,Age Limit,"What is the oldest age allowed for people in this program? If no limit, Choose ""99""."
+Edit Program,ThisFacility,#this-facility/edit-program3/,Fee,Please provide the fee and how often you require payment.
+Edit Program,ThisFacility,#this-facility/edit-program3/,Fee,"What is the fee amount in dollars for this program? (If no fee, enter 0.00 and select Total/Season for Fee Frequency.)"
+Edit Program,ThisFacility,#this-facility/edit-program3/,Fee frequency,How often is the fee applied?
+Edit Program,ThisFacility,#this-facility/edit-program3/,Amenities,Which of your facilities amenities will be used by this program? 
+Edit Program,ThisFacility,#this-facility/edit-program3/,RegistrationStatus,What is the current status of your program?
+Edit Program,ThisFacility,#this-facility/edit-program3/,RegistrationStartDate,Change the start date for registration for your program.
+Edit Program,ThisFacility,#this-facility/edit-program3/,IsActive,"Is this program currently active? If you select no, it will not appear on the public website or in the Add Program Attendance form. "
+Edit Program,ThisFacility,#this-facility/edit-program3/,Publish to the website?,Submit program to be reviewed to publish online. Users will be able to search and express interest in this program.
+Edit Program Description,Programs View,#view-program-details/edit-program-description,Edit Program Description,Provide a description of your program. You may use rich text formatting to style your content.
+Edit Program Faciliatators,Programs View,#view-program-details/edit-program-facilitator/,Edit Program Faciliatators,"Program facilitators are the individuals in the room, on the court, or on the sidelines leading instruction or game play. "
+Edit Program Age & Gender,Programs View,#view-program-details/edit-program-age-gender,Edit Program Age & Gender,Edit the targeted age and gender for this program. 
+Edit Program Fee,Programs View,#view-program-details/edit-program-fee,Edit Program Fee,Edit the amount that is being charged to each.
+Edit Program Schedule,Programs View,#view-program-details/edit-program-schedule2/,Edit Program Schedule,Edit the schedule for this program.
+Add Program Schedule,Programs View,#view-program-details/add-program-schedule4/,Add Program Schedule,"Add a program schedule. Older schedules are saved, this form just adds another one. "
