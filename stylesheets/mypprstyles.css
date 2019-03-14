@@ -9,8 +9,8 @@ header.site-header {
 
 .site-footer {
   background: #005295 !important;
-  color: white;
-  position: absolute;
-  bottom: 0;
+  color: white !important;
+  /* position: absolute;
+  bottom: 0; */
   width: 100%;
 }
