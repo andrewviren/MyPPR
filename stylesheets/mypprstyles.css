@@ -8,3 +8,8 @@ header.site-header {
   background: #005295 !important;
   color:  #DEB408;
 }
+
+.blue-footer {
+  background: #005295;
+  color: white;
+}
