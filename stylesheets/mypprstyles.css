@@ -2,17 +2,21 @@ header.site-header {
   background-color:  #005295 ;
 }
 
-
+header.site-header a:active {
+  opacity: 1 !important;
+}
 .page-title-container:hover {
   opacity: 1 !important;
 }
 
 h1.page-title:hover {
   color:  #DEB408 !important;
+  opacity: 1 !important;
 }
 
 h2.page-subtitle:hover {
   color:  #DEB408 !important;
+  opacity: 1 !important;
 }
 
 .site-branding {
