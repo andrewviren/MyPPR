@@ -2,9 +2,10 @@ header.site-header {
   background-color:  #005295 ;
 }
 
-header.site-header a:active {
+header.site-header a:hover {
   opacity: 1 !important;
 }
+
 .page-title-container:hover {
   opacity: 1 !important;
 }
