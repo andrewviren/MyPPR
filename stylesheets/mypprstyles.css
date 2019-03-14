@@ -7,10 +7,11 @@ header.site-header {
   color:  #DEB408 !important;
 }
 
-.site-footer {
+.blue-footer {
   background: #005295 !important;
   color: white !important;
   /* position: absolute;
   bottom: 0; */
   width: 100%;
+  max-height: 20px;
 }
