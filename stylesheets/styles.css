@@ -143,10 +143,6 @@ table {
   border-collapse:collapse;
 }
 
-header.site-header { 
-  background-color: black;
-
-}
 th, td {
   text-align:left;
   padding:5px 10px;
