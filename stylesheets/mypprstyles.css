@@ -2,10 +2,10 @@ header.site-header {
   background-color:  #005295 ;
 }
 
-.page-title-container:hover {
+h1.page-title:hover {
   color:  #DEB408;
-
 }
+
 .site-branding {
   background: #005295 !important;
   /* color:  !important; */
