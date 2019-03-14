@@ -5,5 +5,5 @@ header.site-header {
 }
 
 .site-branding {
-  background: black;
+  background: black !important;
 }
