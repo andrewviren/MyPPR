@@ -1,0 +1,16 @@
+header.site-header { 
+  background-color:  #005295 ;
+}
+
+.site-branding {
+  background: #005295 !important;
+  color:  #DEB408 !important;
+}
+
+.site-footer {
+  background: #005295 !important;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
