@@ -1,9 +1,10 @@
 
 header.site-header { 
-  background-color: black;
+  background-color:  #005295 ;
 
 }
 
 .site-branding {
-  background: black !important;
+  background: #005295 !important;
+  color:  #DEB408;
 }
