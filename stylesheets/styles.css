@@ -1,7 +1,7 @@
 @media screen and (max-width: 500px)
-.kn-button-menu.kn-grid-3 li {
+  .kn-button-menu.kn-grid-3 li {
     width: 40%;
-}
+  }
 
 @font-face {
   font-family: 'Noto Sans';
@@ -143,6 +143,10 @@ table {
   border-collapse:collapse;
 }
 
+.site-header {
+  background-color: black;
+  
+}
 th, td {
   text-align:left;
   padding:5px 10px;
