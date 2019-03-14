@@ -10,8 +10,8 @@ header.site-header {
 .blue-footer {
   background: #005295 !important;
   color: white !important;
-  /* position: absolute;
-  bottom: 0; */
+  position: fixed;
+  bottom: 0; 
   width: 100%;
   max-height: 20px;
 }
