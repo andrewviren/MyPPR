@@ -4,9 +4,9 @@ main {
 }
 
 .page-title-large {
-  font-size: 2rem;
+  font-size: 2rem !important;
 }
 
 table th {
-  color: #07467c;
+  color: #226bbb;
 }
