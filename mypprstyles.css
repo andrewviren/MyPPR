@@ -19,3 +19,7 @@ table th {
 .search::after {
   content: none;
 }
+
+.table-keyword-search input {
+  border: grey 1px solid;
+}
