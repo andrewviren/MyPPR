@@ -10,3 +10,8 @@ main {
 table th {
   color: #226bbb;
 }
+
+.search {
+  width: 200px !important;
+  background: white !important;
+}
