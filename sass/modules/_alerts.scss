@@ -1,0 +1,45 @@
+#site-wide-alert{ //sass-lint:disable-line no-ids
+  background: color(dark-ben-franklin);
+  color: white;
+  position: relative;
+  .icon {
+    color:color(electric-blue);
+  }
+  .message{
+    @include secondary-font(700);
+  }
+  .dates{
+    font-style: italic;
+    font-weight: 400;
+  }
+  a:link, a:visited{
+    color: white;
+    text-decoration: underline;
+  }
+  button.close-button{
+    color:white;
+  }
+}
+
+.alert {
+  &.alert-persistent {
+    background:color(dark-gray);
+    color: white;
+    padding: $spacing-small $spacing-none;
+
+    p {
+      display:block;
+      margin: 0;
+      font-size: .85rem;
+    }
+    a:link, a:visited{
+      font-size: .85rem;
+      color:white;
+      text-transform: uppercase;
+    }
+    a:hover, a:active{
+      font-size: .85rem;
+      color:color(electric-blue);
+    }
+  }
+}

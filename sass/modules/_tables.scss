@@ -1,0 +1,44 @@
+table {
+  margin: 1em 0;
+  th, td {
+    border: 2px solid white;
+  }
+  th{
+    background: color(dark-gray);
+    color:white;
+  }
+  &.connect {
+    th{
+      background: transparent;
+      color:inherit;
+    }
+  }
+  &.service-update{
+    th{
+      color:inherit;
+    }
+  }
+}
+
+
+table.responsive {
+  margin: 1em 0;
+  tr {
+    border-top: 1px solid color(ghost-gray);
+    border-bottom: 1px solid color(ghost-gray);
+  }
+  th {
+    display: none;
+  }
+  td {
+    display: block;
+  }
+  th, td {
+    @include breakpoint(medium up) {
+      display: table-cell;
+      .responsive-label {
+        display: none;
+      }
+    }
+  }
+}

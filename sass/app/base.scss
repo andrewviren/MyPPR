@@ -1,0 +1,129 @@
+//override beta breakpoints
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1050px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
+
+#application { //sass-lint:disable-line no-ids
+  /* If anchor class is present on the application div, we set the footer to fixed and adjust the margin of the continer so content won't overlap if scrolled all the way to the bottom of the page. */
+  &.anchor {
+    margin-bottom: 35px;
+    position: relative;
+    .app-footer{
+      position: fixed;
+      bottom: 0;
+    }
+  }
+  .site-header{
+    width:100%;
+    background: color(dark-ben-franklin);
+    color: white;
+    padding: $spacing-medium 0;
+    .logo{
+      display: inline-block;
+      margin:0;
+      vertical-align: middle;
+      img{
+        max-width: 170px;
+        height:auto;
+      }
+    }
+    .app-divide{
+      display: inline-block;
+      min-height:3rem;
+      vertical-align: middle;
+      @include breakpoint(medium up) {
+        margin: 0 1rem;
+        border-left:1px solid white;
+      }
+    }
+    .page-title-container{
+      display: inline-block;
+      vertical-align: middle;
+
+      a{
+        display: inline-block;
+      }
+
+      a:link, a:visited{
+        color:white;
+      }
+      a:hover, a:active, a:focus {
+        color: color(electric-blue);
+      }
+
+      h1{
+        margin:0;
+        font-size: rem-calc(18);
+        vertical-align: bottom;
+
+      }
+      h2{
+        margin:0;
+        font-size: rem-calc(14);
+      }
+      @include breakpoint(small only) {
+        margin-left: 1rem;
+      }
+    }
+    .app-buttons{
+      display: inline-block;
+      vertical-align: middle;
+      float:right;
+      @include breakpoint(small only) {
+        float:none;
+      }
+    }
+  }
+  .app-nav{
+    @include center();
+    background: color(electric-blue);
+    padding: $spacing-small 0;
+
+    a:hover, a:active, a:focus {
+      color: white;
+    }
+
+    ol, ul{
+      margin:0;
+      list-style: none;
+      li{
+        display: inline;
+        border-left: 1px solid color(dark-gray);
+        padding: 0 1rem;
+        &:first-of-type{
+          border:none;
+        }
+
+      }
+    }
+  }
+  .app-footer{
+    @include center();
+    background: color(dark-ben-franklin);
+    width:100%;
+    padding: $spacing-small 0;
+
+    a:link, a:visited{
+      color:white;
+    }
+    a:hover, a:active, a:focus {
+      color: color(electric-blue);
+    }
+    nav {
+      ul{
+        margin-bottom:0;
+        li{
+          border-left: 1px solid color(electric-blue);
+          padding: 0 1rem;
+          &:first-of-type{
+            border:none;
+          }
+        }
+      }
+    }
+  }
+}

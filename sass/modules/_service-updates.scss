@@ -1,0 +1,47 @@
+//Service Updates
+.service-update{
+  @include secondary-font(400);
+  margin-bottom: .5rem;
+  color: color(dark-gray);
+  text-align: left;
+
+  thead, tbody, tfoot, tbody tr:nth-child(even){
+    background:none;
+  }
+  th, td {
+    border-bottom: 1rem solid white;
+    border-right: .5rem solid white;
+  }
+  .service-update--critical {
+    th{
+      background: color(light-red);
+    }
+    td{
+      background: transparentize( color(light-red), 0.5);
+    }
+  }
+  .service-update--warning {
+    th{
+      background: color(light-bell);
+    }
+    td{
+      background: transparentize( color(light-bell), 0.5);
+    }
+  }
+
+  th {
+    background: color(light-kelly-drive);
+    width:30%;
+  }
+  td {
+    background: transparentize( color(light-kelly-drive), 0.5);
+  }
+  .icon-label{
+    font-weight:normal;
+    text-transform: uppercase;
+    vertical-align: text-bottom;
+    @include breakpoint(small only) {
+      display: block;
+    }
+  }
+}

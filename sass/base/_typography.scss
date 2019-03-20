@@ -1,0 +1,172 @@
+// Heading sizes
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  @include secondary-font(400);
+
+  &.contrast {
+    border-bottom:10px solid color(ben-franklin-blue);
+  }
+
+}
+
+//add header classes
+@each $size, $headers in $header-styles {
+  @include breakpoint($size) {
+    @each $header, $font-size in $headers {
+      .#{$header} {
+        font-size: map-values($font-size) + px;
+      }
+    }
+  }
+}
+
+
+h1, .h1{
+  padding:0;
+  margin-top:rem-calc(16);
+  margin-bottom:rem-calc(16);
+  letter-spacing:.03rem;
+}
+
+h2, .h2 {
+  margin:rem-calc(13 0);
+  padding:0;
+  letter-spacing:.03rem;
+}
+
+h3, .h3{
+  letter-spacing:.03rem;
+  border-bottom: none;
+  padding:0;
+}
+
+.tertiary-content{
+  h2{
+    margin-top:0;
+  }
+  h3{
+    color: black;
+    background: color(ghost-gray);
+    font-size: rem-calc(25);
+    margin-top: $spacing-large;
+    margin-bottom: $spacing-medium;
+
+    @include breakpoint(medium) {
+      padding: 0 $spacing-medium;
+    }
+  }
+  h4 {
+    @include breakpoint(medium) {
+      margin-top: $spacing-medium;
+    }
+  }
+}
+
+// Paragraphs + heading interaction
+section{
+
+  h1 + p,
+  h2 + p,
+  h3 + p,
+  h4 + p,
+  h5 + p,
+  h6 + p{
+    margin-top:0;
+  }
+
+  p + h1,
+  p + h2,
+  p + h3,
+  p + h4,
+  p + h5,
+  p + h6{
+    margin-top:$spacing-large;
+  }
+
+  h2 + h3{
+    margin-top:$spacing-small;
+  }
+
+}
+blockquote{
+  margin: 0 $spacing-medium $spacing-medium $spacing-small;
+}
+
+blockquote + h1,
+blockquote + h2,
+blockquote + h3,
+blockquote + h4,
+blockquote + h5,
+blockquote + h6{
+  margin-top:$spacing-large;
+}
+// Links
+a:link, a:visited{
+  @extend %link-styles;
+}
+a:hover, a:active, a:focus {
+  color:color(dark-gray);
+}
+
+.small-text {
+  display:block;
+  color: color(dark-gray);
+  font-size: rem-calc(13);
+}
+
+// Tooltip
+.tooltip {
+  font-size:rem-calc(12);
+  p{
+    margin:rem-calc(6 0);
+    font-size:rem-calc(12);
+  }
+}
+
+// External Links
+.external::after {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  content: "\f35d"; /* external-link-alt */
+  font-size:rem-calc(12);
+  padding:0 5px;
+}
+
+.callout{
+  border-left:5px solid color(flyers-orange);
+}
+
+section {
+  ol, ul {
+    overflow: hidden;
+    padding-left: 1.5rem;
+    + p {
+      margin-top:$spacing-medium;;
+
+    }
+  }
+}
+ul ul{
+  list-style-type: circle;
+  ul {
+    list-style-type: square;
+  }
+}
+article.list-table{
+  ol, ul{
+    display: table;
+    margin-left: 2rem;
+  }
+  li{
+    margin-left: 1rem;
+    text-indent: 0rem;
+  }
+}
+.large-text{
+  font-size: $large-font-base;
+  font-weight: 600;
+}

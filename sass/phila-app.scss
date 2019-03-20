@@ -1,0 +1,47 @@
+/* Digital Standards for Apps by the City of Philadelphia*/
+@import '../_vendor/foundation-sites/scss/util/util';
+
+@import 'utils/variables';
+@import 'utils/colors';
+@import 'utils/helpers';
+@import 'utils/fonts';
+@import 'utils/mixins';
+@import 'utils/placeholders';
+
+@import 'settings';
+@import 'foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-flex-classes;
+@include foundation-typography;
+@include foundation-forms;
+@include foundation-button;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-menu-icon;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-xy-grid-classes;
+
+@import 'base/buttons';
+@import 'base/forms';
+@import 'base/typography';
+
+@import 'layout/border-list';
+@import 'layout/inside-border';
+@import 'layout/side-nav';
+@import 'modules/alerts';
+@import 'modules/card';
+@import 'modules/panel';
+@import 'modules/pull-quotes';
+@import 'modules/service-updates';
+@import 'modules/tables';
+@import 'modules/modal';
+@import 'utils/tachyon-spacing';
+
+@import 'app/base';

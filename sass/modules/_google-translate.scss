@@ -1,0 +1,77 @@
+// sass-lint:disable no-ids, no-important
+#google_translate_element {
+  display: inline-block;
+  font-size: .8rem;
+  line-height: 1;
+  color:white;
+  padding: 0 0.5rem;
+
+  &.no-js{
+    display: none;
+  }
+
+  a{
+    padding: .5rem 2rem .5rem .5rem;
+
+    &:hover{
+      color: color(ben-franklin-blue);
+      background: color(light-blue);
+
+      &::before {
+        color: color(ben-franklin-blue);
+        background: color(light-blue);
+      }
+    }
+  }
+
+  .goog-te-gadget-simple{
+    display: inline-block;
+    padding:0;
+    background:none;
+    border:none;
+    text-transform: uppercase;
+    img {
+      display: none;
+    }
+    span {
+      vertical-align: top !important;
+    }
+    .goog-te-menu-value {
+      margin: 0 0;
+      position: relative;
+
+      &:hover::after{
+        color:color(ben-franklin-blue);
+        border-color: color(ben-franklin-blue) transparent transparent;
+      }
+
+      &::after{
+        display: inline;
+        margin: 0;
+        border: inset 5px;
+        border-color: #fff transparent transparent;
+        border-top-style: solid;
+        border-bottom-width: 0;
+        content: '';
+        position: absolute;
+        line-height: 0;
+        right: 7px;
+        top: 10px;
+      }
+      .fa::after{
+        display: inline-block;
+        padding: 0 0 0 .5rem;
+        content: 'Translate';
+        font-family: 'Montserrat', 'Tahoma', sans-serif;
+        font-weight: normal;
+      }
+
+      span{
+        display: none;
+        &:hover{
+          color: color(ben-franklin-blue) !important;
+        }
+      }
+    }
+  }
+}
