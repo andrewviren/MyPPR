@@ -12,6 +12,10 @@ table th {
 }
 
 .search {
-  width: 200px !important;
+  max-width: 65px !important;
   background: white !important;
+}
+
+.search::after {
+  content: none;
 }
