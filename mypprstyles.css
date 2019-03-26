@@ -27,3 +27,7 @@ table th {
 input[type=checkbox] {
   display: inline !important;
 }
+
+input[type=radio] {
+  display: inline !important;
+}
