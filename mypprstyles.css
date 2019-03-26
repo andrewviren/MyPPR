@@ -23,3 +23,7 @@ table th {
 .table-keyword-search input {
   border: grey 1px solid;
 }
+
+input[type=checkbox] {
+  display: inline !important;
+}
