@@ -1,0 +1,37 @@
+main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.page-title-large {
+  font-size: 2rem !important;
+}
+
+table th {
+  color: #226bbb;
+}
+
+.search {
+  max-width: 65px !important;
+  background: white !important;
+}
+
+.search::after {
+  content: none;
+}
+
+.table-keyword-search input {
+  border: grey 1px solid;
+}
+
+input[type=checkbox] {
+  display: inline !important;
+}
+
+input[type=radio] {
+  display: inline !important;
+}
+
+#kn-app-menu {
+  display: none !important;
+}

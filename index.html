@@ -1,163 +1,105 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en">
 
-    <title>My PPR</title>
-    <link rel='icon' type='image/x-icon' href="//cityofphiladelphia.github.io/patterns/images/favicon.ico">
-    <meta name="description" content="">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyPPR | City of Philadelphia</title>
+  <link rel="stylesheet" href="https://unpkg.com/phila-standards@0.11.2/dist/css/phila-app.min.css">
+  <link rel="stylesheet" href="mypprstyles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://standards.phila.gov/img/favicon.png"> <meta name="twitter:card" content="summary">
+<meta property="og:title" content=""> 
+<meta property="og:description" content=""> 
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:site_name" content="MyPPR | City of Philadelphia">
+<meta property="og:image" content="https://phila.gov/media/20160715133810/phila-gov.jpg">
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
 
-    <!--Ionicons are optional-->
-    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-
-    <!--pattern stylesheet includes foundation css -->
-    <link rel="stylesheet" href="//cityofphiladelphia.github.io/patterns/dist/1.4.1/css/patterns.css">
-    
-    <!--PPR specific styles-->
-    <link rel="stylesheet" href="/stylesheets/MyPPRstyles.css">
-
-    <style>
-    #page #kn-app-menu ul {
-      background-color: #027EA4; /* $ben-franklin-blue */
-      border: none;
-    }
-    .kn-records-nav select,
-    .kn-records-nav input {
-      width: initial;
-      display: initial;
-    }
-    </style>
-
-    <link rel="canonical" href="">
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TQTDMKG');</script>
-    <!-- End Google Tag Manager -->
-      
-      
-<!--     Hotjar Tracking Code for http://test.my-ppr.com/ 
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:184415,hjsv:5};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>-->
-
-  </head>
-
-  <body>
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQTDMKG"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-      
-    <div class="site" id="page">
-      <!-- Begin .header -->
-      <header data-swiftype-index='false' class="site-header app">
-        <div class="row site-branding">
-          <div class="small-24 columns">
-            <a href="http://www.phila.gov" class="logo pam">
-              <img src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-white.png" alt="City of Philadelphia">
-            </a>
-            <div class="page-title-container">
-              <a href="/">
-                <h1 class="page-title">My PPR</h1>
-                <h2 class="page-subtitle">Philadelphia Parks & Recreation Programs</h2>
-              </a>
-            </div>
-          </div>
+<body lang="en">
+  <div id="application">
+  <!-- Begin header -->
+  <header class="site-header app group">
+    <div class="row expanded">
+      <!-- if you don't want a full-width header, remove the expanded class -->
+      <div class="columns">
+        <a href="https://www.phila.gov/departments/philadelphia-parks-recreation/" class="logo">
+          <img src="ppr-logo-white.png" alt="PPR Logo">
+        </a>
+        <div class="app-divide"></div>
+        <div class="page-title-container">
+          <a href="#">
+            <h1 class="page-title-large">MyPPR</h1>
+            <!-- <h2 class="page-subtitle">Managing Recreation Center Permits</h2> -->
+          </a>
         </div>
-        <div class="row expanded">
-          <div class="columns">
-            <div class="row">
-              <div class="large-24 columns">
-                <nav>
-                  <ul class="breadcrumbs">
-                    <li><a href="http://www.phila.gov">phila.gov</a></li>
-                    <li><a href="http://www.phila.gov/parksandrecreation/">Parks & Recreation</a></li>
-                    <li>My PPR</li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+      </div>
+    </div>
+  </header>
 
-      <article data-swiftype-name="body" data-swiftype-type="text">
-        <div class="row">
-          <div class="large-24 columns">
-            <!-- Knack embed code -->
-            <script type="text/javascript">app_id="56733078e8eaf49605439f7d";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/56733078e8eaf49605439f7d/dist_2/knack.js"></script><div id="knack-dist_2">Loading...</div>
-
-            <!-- Custom JavaScript -->
-            <script src="ppr.js"></script>
-          </div>
-        </div>
-      </article>
-    </div><!-- End #page -->
-    <!-- Begin Footer -->
-<footer data-swiftype-index='false' class="site-footer">
-  <section class="fat">
-    <div class="row">
-      <div class="large-8 columns">
-        <h1>Government</h1>
+  <div class="app-nav">
+    <div class="row expanded">
+      <div class="columns">
         <nav>
           <ul>
-            <li><a href="http://alpha.phila.gov">alpha.phila.gov</a></li>
-            <li><a href="http://alpha.phila.gov/departments">City Government Directory</a></li>
-            <li><a href="http://www.phila.gov/mayor">Mayor's Office</a></li>
-            <li><a href="http://iframe.publicstuff.com/#?client_id=242">Report an Issue / 311</a></li>
-            <li><a href="http://cityofphiladelphia.wordpress.com/">News</a></li>
+            <li>
+              <a href="#staff" data-kn-slug="#staff">Manage Programs</a>
+            </li>
+            <li>
+              <a href="#support"data-kn-slug="#support">MyPPR Support</a>
+            </li>
+            <!-- <li>
+              <a href="#staff/facility/this-facility/add-program-attendance" 
+              data-kn-slug="#staff/facility/this-facility/add-program-attendance">
+              Add Program Attendance
+            </a>
+            </li> -->
+            
           </ul>
         </nav>
       </div>
-      <div class="large-16 columns">
-        <h1>Browse alpha.phila.gov</h1>
-        <nav>
-          <ul class="columns-2">
-            <li><a href="http://alpha.phila.gov/browse/health">Health</a></li>
-            <li><a href="http://alpha.phila.gov/browse/legal">Legal</a></li>
-            <li><a href="http://alpha.phila.gov/browse/payments-and-taxes">Payments and Taxes</a></li>
-            <li><a href="http://alpha.phila.gov/browse/permits-licenses">Permits and Licenses</a></li>
-            <li><a href="http://alpha.phila.gov/browse/property-housing">Property and Housing</a></li>
-            <li><a href="http://alpha.phila.gov/browse/public-safety">Public Safety</a></li>
-            <li><a href="http://alpha.phila.gov/browse/streets-and-utilities">Streets and Utilities</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </section>
-  <div class="row classic center">
-    <div class="columns">
-      <nav>
-        <ul class="inline-list">
-          <li><a href="http://alpha.phila.gov/terms-of-use">Terms of use</a></li>
-          <li><a href="http://www.phila.gov/privacy/pdfs/FinalCityOpenRecords.pdf">Right to know (pdf)</a></li>
-          <li><a href="http://alpha.phila.gov/privacypolicy">Privacy Policy</a></li>
-        </ul>
-      </nav>
     </div>
   </div>
-</footer>
 
-<!-- End Footer -->
+  <main>
+     <!-- Knack embed code -->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <script type="text/javascript">app_id="56733078e8eaf49605439f7d";distribution_key="dist_2";</script>
+     <script type="text/javascript" src="https://loader.knack.com/56733078e8eaf49605439f7d/dist_2/knack.js"></script>
+     <div id="knack-dist_2">Loading...</div>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
+     <!-- <script type="text/javascript">app_id="5c8e76f14aa7a05328a82931";distribution_key="dist_2";</script>
+     <script type="text/javascript" src="https://loader.knack.com/5c8e76f14aa7a05328a82931/dist_2/knack.js"></script>
+     <div id="knack-dist_2">Loading...</div> -->
 
-    <script src="//cityofphiladelphia.github.io/patterns/dist/1.4.1/js/patterns.min.js"></script>
-  </body>
+  </main>
+    <div class="app-footer anchor">
+    <!-- remove the anchor class if you want to handle footer placement yourself, otherwise it will be postion: fixed -->
+    <footer>
+      <div class="row expanded">
+        <div class="columns">
+          <nav>
+            <ul class="inline-list">
+              <li>
+                <a href="https://www.phila.gov/departments/philadelphia-parks-recreation/">Philadelphia Parks and Rec</a>
+              </li>
+              <li>
+                <a href="http://www.pprinfo.com/">PPR Info</a>
+              </li>
+              <li>
+                <a href="https://www.phila.gov/parks-rec-finder/#/">Finder App</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+<!-- #application -->
+
+</body>
+
 </html>
