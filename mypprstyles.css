@@ -33,5 +33,5 @@ input[type=radio] {
 }
 
 #kn-app-menu {
-  display: none;
+  display: none !important;
 }
