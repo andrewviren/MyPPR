@@ -31,3 +31,7 @@ input[type=checkbox] {
 input[type=radio] {
   display: inline !important;
 }
+
+#kn-app-menu {
+  display: none;
+}
