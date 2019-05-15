@@ -27,8 +27,14 @@ window.KnackInit = function($) {
     ];
     var $attendanceWeekField = $('#view_426-field_148');
     var today, monday, daysSinceMonday;
+    var previousDate;
+
+    if (previousDate != null) {
+      console.log(previousDate);
+
+      $attendanceWeekField.val(previousDate);
+    }
      
-      
     /**********************************
     /* Only allow Mondays to be selected
     /***********************************/
