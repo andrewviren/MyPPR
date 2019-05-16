@@ -30,6 +30,7 @@ window.KnackInit = function($) {
     var today, monday, daysSinceMonday;
     var previousDate;
 
+    
     if (previousDate != null) {
       console.log(previousDate);
 
@@ -69,6 +70,7 @@ window.KnackInit = function($) {
     $attendanceWeekField.on('change', function() {
       PPR.attendanceForm.lastDate = $attendanceWeekField.val();
       previousDate = $attendanceWeekField.val();
+      console.log(previousDate);
     });
 
     // Verify that numeric fields have a number in them
