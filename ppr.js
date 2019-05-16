@@ -25,6 +25,7 @@ window.KnackInit = function($) {
       '#field_150',
       '#field_152'
     ];
+
     var $attendanceWeekField = $('#view_426-field_148');
     var today, monday, daysSinceMonday;
     var previousDate;
@@ -67,6 +68,7 @@ window.KnackInit = function($) {
     // Remember the attendance form date whenever it changes.
     $attendanceWeekField.on('change', function() {
       PPR.attendanceForm.lastDate = $attendanceWeekField.val();
+      previousDate = $attendanceWeekField.val();
     });
 
     // Verify that numeric fields have a number in them
