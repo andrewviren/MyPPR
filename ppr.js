@@ -25,18 +25,10 @@ window.KnackInit = function($) {
       '#field_150',
       '#field_152'
     ];
-
     var $attendanceWeekField = $('#view_426-field_148');
     var today, monday, daysSinceMonday;
-    // var previousDate;
-
-    
-    // if (previousDate != null) {
-    //   console.log(previousDate);
-
-    //   $attendanceWeekField.val(previousDate);
-    // }
      
+      
     /**********************************
     /* Only allow Mondays to be selected
     /***********************************/
@@ -69,8 +61,6 @@ window.KnackInit = function($) {
     // Remember the attendance form date whenever it changes.
     $attendanceWeekField.on('change', function() {
       PPR.attendanceForm.lastDate = $attendanceWeekField.val();
-      // previousDate = $attendanceWeekField.val();
-      // console.log(previousDate);
     });
 
     // Verify that numeric fields have a number in them
