@@ -47,9 +47,9 @@ window.KnackInit = function($) {
 
     if (PPR.attendanceForm.lastFacility) {
       console.log(PPR.attendanceForm.lastFacility);
-      //$facilityField.val(PPR.attendanceForm.lastFacility);
+      $facilityField.val(PPR.attendanceForm.lastFacility);
 
-      $($facilityField + ' option['+ PPR.attendanceForm.lastFacility +']').prop('selected', 'selected').change();
+      //$($facilityField + ' option['+ PPR.attendanceForm.lastFacility +']').prop('selected', 'selected').change();
     }
 
     // If this is the first time the form has been loaded, use the Monday
