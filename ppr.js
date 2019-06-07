@@ -46,6 +46,7 @@ window.KnackInit = function($) {
     }
 
     if (PPR.attendanceForm.lastFacility) {
+      console.log(PPR.attendanceForm.lastFacility);
       $facilityField.val(PPR.attendanceForm.lastFacility);
     }
 
