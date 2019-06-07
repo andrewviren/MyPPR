@@ -19,6 +19,7 @@ window.KnackInit = function($) {
 
   $(document).on('knack-page-render.scene_234', function(event, page) {
     PPR.attendanceForm = PPR.attendanceForm || {};
+    console.log("here");
 
     var numericFields = [
       '#field_151',
@@ -60,7 +61,7 @@ window.KnackInit = function($) {
 
     // Remember the attendance form date whenever it changes.
     $attendanceWeekField.on('change', function() {
-      console.log(PPR.attendanceForm.lastDate);
+      console.log($attendanceWeekField.val());
       PPR.attendanceForm.lastDate = $attendanceWeekField.val();
     });
 
