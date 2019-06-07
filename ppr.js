@@ -60,6 +60,7 @@ window.KnackInit = function($) {
 
     // Remember the attendance form date whenever it changes.
     $attendanceWeekField.on('change', function() {
+      console.log(PPR.attendanceForm.lastDate);
       PPR.attendanceForm.lastDate = $attendanceWeekField.val();
     });
 
