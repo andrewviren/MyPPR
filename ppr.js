@@ -1,4 +1,5 @@
 var PPR = PPR || {};
+PPR.attendanceForm = PPR.attendanceForm || {};
 
 window.KnackInit = function($) {
   'use strict';
@@ -18,7 +19,6 @@ window.KnackInit = function($) {
   */
 
   $(document).on('knack-page-render.scene_383', function(event, page) {
-    PPR.attendanceForm = PPR.attendanceForm || {};
 
     var numericFields = [
       '#field_151',
