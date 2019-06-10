@@ -5,17 +5,18 @@ window.KnackInit = function($) {
   'use strict';
 
   /*
-  Page "scene_93": Program Program Attendance form and table
+  Page "scene_383": Program Program Attendance form
   ========================================================
   Views
   -----
   - view_154: Weekly Program Attendance form
   Fields
   ------
-  - field_151: Number of Registered Participants
+  - field_151: Number of Registered Participants 
   - field_150: Number of Unique Participants
   - field_152: Number of Spectators
   - field_148: Attendance Week
+  - field_380: Facility Name
   */
   PPR.attendanceForm = PPR.attendanceForm || {};
 
@@ -46,6 +47,7 @@ window.KnackInit = function($) {
     var lastDate = localStorage.getItem("formDate");
     var lastFacility = localStorage.getItem("facilityName")
 
+    //Set Facility Field if stored in localstorage
     if (lastFacility != null) {
       console.log(lastFacility);
       $facilityField.value = lastFacility;
@@ -54,6 +56,7 @@ window.KnackInit = function($) {
       $facilityField.chosen().trigger("change");
     };
 
+    //Set date if stored in localstorage
     if (lastDate != null) {
       console.log(lastDate);
       $attendanceWeekField.val(lastDate);
@@ -78,7 +81,7 @@ window.KnackInit = function($) {
       localStorage.setItem("formDate", PPR.attendanceForm.lastDate);
     });
 
-     // Remember the facility name whenever it changes.
+    // Remember the facility name whenever it changes.
      $facilityField.on('change', function() {
       PPR.attendanceForm.facilityName = $facilityField.val();
       localStorage.setItem("facilityName", PPR.attendanceForm.facilityName);
