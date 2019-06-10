@@ -20,15 +20,15 @@ window.KnackInit = function($) {
   */
   PPR.attendanceForm = PPR.attendanceForm || {};
 
-  $(document).on('knack-page-render.scene_364', function(event, page) {
+  $(document).on('knack-page-render.scene_367', function(event, page) {
 
     var numericFields = [
       '#field_151',
       '#field_150',
       '#field_152'
     ];
-    var $attendanceWeekField = $('#view_664-field_148');
-    var $facilityField = $('#view_664-field_380');
+    var $attendanceWeekField = $('#view_667-field_148');
+    var $facilityField = $('#view_667-field_380');
     var today, monday, daysSinceMonday;
      
       
