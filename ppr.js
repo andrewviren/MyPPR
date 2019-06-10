@@ -43,15 +43,8 @@ window.KnackInit = function($) {
     // selected value for the date.
     if (PPR.attendanceForm.lastDate) {
       $attendanceWeekField.val(PPR.attendanceForm.lastDate);
+      console.log(PPR.attendanceForm.lastDate + "line 46");
     }
-
-    if (PPR.attendanceForm.lastFacility) {
-      console.log(PPR.attendanceForm.lastFacility);
-      $facilityField.val(PPR.attendanceForm.lastFacility);
-
-      //$($facilityField + ' option['+ PPR.attendanceForm.lastFacility +']').prop('selected', 'selected').change();
-    }
-
     // If this is the first time the form has been loaded, use the Monday
     // immediately preceding today.
     else {
