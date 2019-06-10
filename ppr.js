@@ -1,5 +1,5 @@
 var PPR = PPR || {};
-PPR.attendanceForm = PPR.attendanceForm || {};
+
 
 window.KnackInit = function($) {
   'use strict';
@@ -17,7 +17,8 @@ window.KnackInit = function($) {
   - field_152: Number of Spectators
   - field_148: Attendance Week
   */
-
+  PPR.attendanceForm = PPR.attendanceForm || {};
+  
   $(document).on('knack-page-render.scene_383', function(event, page) {
 
     var numericFields = [
