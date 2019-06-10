@@ -27,7 +27,7 @@ window.KnackInit = function($) {
       '#field_152'
     ];
     var $attendanceWeekField = $('#view_688-field_148');
-    // var $facilityField = $('#view_688-field_380');
+    var $facilityField = $('#view_688-field_380');
     var today, monday, daysSinceMonday;
      
       
@@ -44,6 +44,12 @@ window.KnackInit = function($) {
     // If this is not the first time the form has been submitted, use the last
     // selected value for the date.
     var lastDate = localStorage.getItem("formDate");
+    var lastFacility = localStorage.getItem("facilityName")
+
+    if (lastFacility != null) {
+      console.log(lastFacility);
+      $facilityField.val(lastFacility);
+    };
 
     if (lastDate != null) {
       console.log(lastDate);
@@ -66,8 +72,13 @@ window.KnackInit = function($) {
     // Remember the attendance form date whenever it changes.
     $attendanceWeekField.on('change', function() {
       PPR.attendanceForm.lastDate = $attendanceWeekField.val();
-      console.log(PPR.attendanceForm.lastDate);
       localStorage.setItem("formDate", PPR.attendanceForm.lastDate);
+    });
+
+     // Remember the facility name whenever it changes.
+     $facilityField.on('change', function() {
+      PPR.attendanceForm.facilityName = $facilityField.val();
+      localStorage.setItem("facilityName", PPR.attendanceForm.facilityName);
     });
 
     // Verify that numeric fields have a number in them
