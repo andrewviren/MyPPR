@@ -17,7 +17,7 @@ window.KnackInit = function($) {
   - field_148: Attendance Week
   */
 
-  $(document).on('knack-scene-render.scene_383', function(event, page) {
+  $(document).on('knack-page-render.scene_383', function(event, page) {
     PPR.attendanceForm = PPR.attendanceForm || {};
 
     var numericFields = [
