@@ -67,11 +67,13 @@ window.KnackInit = function($) {
 
     // Remember the attendance form date whenever it changes.
     $attendanceWeekField.on('change', function() {
+
       PPR.attendanceForm.lastDate = $attendanceWeekField.val();
+      console.log(PPR.attendanceForm.lastDate);
     });
 
     $facilityField.on('change', function() {
-      //console.log($facilityField.val());
+     
       PPR.attendanceForm.lastFacility = $facilityField.val();
     });
 
