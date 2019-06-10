@@ -17,7 +17,7 @@ window.KnackInit = function($) {
   - field_148: Attendance Week
   */
 
-  $(document).on('knack-view-render.scene_383', function(event, page) {
+  $(document).on('knack-scene-render.scene_383', function(event, page) {
     PPR.attendanceForm = PPR.attendanceForm || {};
 
     var numericFields = [
@@ -26,7 +26,7 @@ window.KnackInit = function($) {
       '#field_152'
     ];
     var $attendanceWeekField = $('#view_688-field_148');
-    var $facilityField = $('#view_688-field_380');
+    // var $facilityField = $('#view_688-field_380');
     var today, monday, daysSinceMonday;
      
       
@@ -35,6 +35,7 @@ window.KnackInit = function($) {
     /***********************************/
     $attendanceWeekField.datepicker('option', {
       beforeShowDay: function (date) {
+        console.debug(date);
         return [date.getDay() == 1, ''];
       }
     });
@@ -43,7 +44,7 @@ window.KnackInit = function($) {
     // selected value for the date.
     if (PPR.attendanceForm.lastDate) {
       $attendanceWeekField.val(PPR.attendanceForm.lastDate);
-      console.log(PPR.attendanceForm.lastDate + "line 46");
+      console.log(PPR.attendanceForm.lastDate + " line 46");
     }
     // If this is the first time the form has been loaded, use the Monday
     // immediately preceding today.
@@ -63,10 +64,6 @@ window.KnackInit = function($) {
       PPR.attendanceForm.lastDate = $attendanceWeekField.val();
       console.log(PPR.attendanceForm.lastDate);
     });
-
-    // $facilityField.on('change', function() {
-    //   PPR.attendanceForm.lastFacility = $facilityField.val();
-    // });
 
     // Verify that numeric fields have a number in them
     $(numericFields.join(',')).each(function(i, el) {
