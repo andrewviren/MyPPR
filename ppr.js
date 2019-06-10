@@ -48,7 +48,7 @@ window.KnackInit = function($) {
 
     if (lastFacility != null) {
       console.log(lastFacility);
-      $facilityField.value(lastFacility);
+      $facilityField.value = lastFacility;
       $facilityField.trigger("liszt:updated");
       $facilityField.chosen().trigger("change");
     };
