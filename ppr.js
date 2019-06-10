@@ -48,7 +48,7 @@ window.KnackInit = function($) {
 
     if (lastFacility != null) {
       console.log(lastFacility);
-      $facilityField.val(lastFacility);
+      $facilityField.val(lastFacility).change();
     };
 
     if (lastDate != null) {
