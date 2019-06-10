@@ -48,7 +48,9 @@ window.KnackInit = function($) {
 
     if (lastFacility != null) {
       console.log(lastFacility);
-      $facilityField.val(lastFacility).change();
+      $facilityField.value = lastFacility;
+      $facilityField.trigger("liszt:updated");
+      $facilityField.chosen().trigger("change");
     };
 
     if (lastDate != null) {
@@ -85,5 +87,7 @@ window.KnackInit = function($) {
     $(numericFields.join(',')).each(function(i, el) {
       $(el).attr('pattern', '[0-9]*');
     });
+
+    return true;
   });
 };
