@@ -20,7 +20,64 @@ window.KnackInit = function($) {
   */
   PPR.attendanceForm = PPR.attendanceForm || {};
 
-  $(document).on('knack-page-render.scene_362', function(event, page) {
+  $(document).on('knack-page-render.scene_234', function(event, page) {
+    var numericFields = [
+      '#field_151',
+      '#field_150',
+      '#field_152'
+    ];
+    var $attendanceWeekFieldOld = $('#view_426-field_148');
+    //var $facilityField = $('#view_661-field_380');
+    var today, monday, daysSinceMonday;
+     
+      
+    /**********************************
+    /* Only allow Mondays to be selected
+    /***********************************/
+    $attendanceWeekFieldOld.datepicker('option', {
+      beforeShowDay: function (date) {
+        console.debug(date);
+        return [date.getDay() == 1, ''];
+      }
+    });
+
+    var lastDateOld = localStorage.getItem("formDateOld");
+
+    //Set date if stored in localstorage
+    if (lastDateOld != null) {
+      console.log(lastDateOld);
+      $attendanceWeekFieldOld.val(lastDateOld);
+      
+    }
+    // If this is the first time the form has been loaded, use the Monday
+    // immediately preceding today.
+    else {
+      today = new Date();
+      monday = new Date(today);
+
+      daysSinceMonday = today.getDay() - 1;  // 0 is Sunday, 1 is Monday
+      daysSinceMonday = (daysSinceMonday + 7) % 7;  // Correct for negatives
+      daysSinceMonday = daysSinceMonday || 7;  // Correct to last Monday if today is Monday
+      monday.setDate(today.getDate() - daysSinceMonday - 7);
+      $attendanceWeekFieldOld.val((monday.getMonth() + 1) + '/' + monday.getDate() + '/' + monday.getFullYear());
+    }
+
+    // Remember the attendance form date whenever it changes.
+    $attendanceWeekFieldOld.on('change', function() {
+      PPR.attendanceForm.lastDateOld = $attendanceWeekFieldOld.val();
+      localStorage.setItem("formDateOld", PPR.attendanceForm.lastDateOld);
+    });
+
+
+    // Verify that numeric fields have a number in them
+    $(numericFields.join(',')).each(function(i, el) {
+      $(el).attr('pattern', '[0-9]*');
+    });
+
+    return true;
+  });
+
+$(document).on('knack-page-render.scene_362', function(event, page) {
 
     var numericFields = [
       '#field_151',
